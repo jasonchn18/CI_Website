@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>ABOUT US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/about.css">
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    
+</head>
+
+<body>
+<div id="1"></div>
+<!--header-->
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+<div>
+   
+	<div class="banner">
+	  <header>
+	   <div class="toggle"></div>
+	  </header>
+	 <img src="img/aboutus.jpg">
+	 <div class="content">
+	  <h4>Success By SHOPLANE</h4>
+	  <p>No Decison Should Be Made on An Empy Shopping Bag</p>
+	  <p>Donita K.Paul</p>
+	 </div>
+	</div>
+
+ <section class="aboutus">
+  <div class="content1">
+   <h4 class="heading">Our Purpose</h4>
+	<p class="text1">We believe in the transformative power of technology and want to change the world for the better by providing a platform to connect buyers and sellers within one community.</p> <br><br>
+
+   <h4 class="heading">Our Positioning</h4>
+<p class="text1">To Internet users across the region, SHOPLANE offers a one-stop online shopping experience that provides a wide selection of products, a social community for exploration, and seamless fulfilment services.</p>
+<br><br>
+  
+  <h4 class="heading">Our Personality</h4>
+<p class="text1">To define who we are - how we talk, behave or react to any given situation - in essence, we are Simple, Happy and Together. These key attributes are visible at every step of the SHOPLANE journey.</p>
+
+<br><br>
+
+
+<h4 class="heading">STORIES, STYLES AND SPORTSWEAR AT SHOPLANE SINCE 2021</h4>
+<p class="text1">
+Sport keeps us fit. Keeps you mindful. Brings us together. Through sport we have the power to change lives. Whether it is through stories of inspiring athletes. Helping you to get up and get moving. Sportswear featuring the latest technologies, to up your performance. RedStore offers a home to the runner, the basketball player, the soccer kid, the fitness enthusiast. The weekend hiker that loves to escape the city. The yoga teacher that spreads the moves. The 3-Stripes are seen in the music scene. On stage, at festivals. Our sports clothing keeps you focused before that whistle blows. During the race. And at the finish lines. We’re here to supportcreators. Improve their game. Their lives. And change the world.
+<br><br>
+
+SHOPLANE is about more than sportswear and workout clothes. We partner with the best in the industry to co-create. This way we offer our fans the sports apparel and style that match their athletic needs, while keeping sustainability in mind. We’re here to support creators. Improve their game. Create change. And we think about the impact we have on our world</p> 
+<br><br>
+
+
+
+  </div>
+  <div class="imgPe"></div>
+	
+ </section>
+		<!-- footer -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+</html>
