@@ -19,6 +19,6 @@ jobs:
     - name: Login to dockerhub
       run: docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASS }}
     - name: Build Docker image
-      run: docker build -f ./Dockerfile -t myaccount/myapp .
+      run: docker build -f ./Dockerfile -t desmond527/ciwebsite .
     - name: Push Docker image to DockerHub
-      run: docker push myaccount/myapp:latest
+      run: docker push desmond527/ciwebsite:latest
