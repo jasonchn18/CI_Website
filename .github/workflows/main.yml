@@ -3,7 +3,7 @@ name: Wbsite Workflow
 on:
   push:
     branches: 
-      - main 
+      - main
   pull_request:
     branches: 
       - main
