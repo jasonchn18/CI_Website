@@ -16,10 +16,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Docker
-      uses: mr-smithers-excellent/docker-build-push@v5
-      with:
-        image: desmond527/ciwebsite
-        registry: docker.io
-        username: ${{secrets.DOCKER_USERNAME}}
-        password: ${{secrets.DOCKER_PASS}}
+    - name: Login to dockerhub
+      run: docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASS }}
+    - name: Build Docker image
+      run: docker build -f ./Dockerfile -t myaccount/myapp .
+    - name: Push Docker image to DockerHub
+      run: docker push myaccount/myapp:latest
