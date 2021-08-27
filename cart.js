@@ -6,6 +6,8 @@ if(document.cookie.indexOf(',counter=')>=0)
     document.getElementById("badge").innerHTML = counter
 }
 
+//
+
 
 let cartContainer = document.getElementById('cartContainer')
 
