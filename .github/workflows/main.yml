@@ -19,7 +19,7 @@ jobs:
     - name: Docker
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: ciwebsite
+        image: desmond527/ciwebsite
         registry: docker.io
         username: ${{secrets.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_PASS}}
